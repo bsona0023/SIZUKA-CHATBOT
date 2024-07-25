@@ -29,20 +29,20 @@ from nexichat.modules.helpers import (
 
 # Random Start Images
 IMG = [
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
-    "https://graph.org/file/0d8c29e1a3a7b0c820750.jpg",
+    "https://telegra.ph/file/1d8ac0a1a98ec5ced9124.jpg",
+    "https://telegra.ph/file/36213460b3aa6069d763f.jpg",
+    "https://telegra.ph/file/416d87dc64c6508736dca.jpg",
+    "https://telegra.ph/file/d6701b75d7228128926d1.jpg",
+    "https://telegra.ph/file/1d8ac0a1a98ec5ced9124.jpg",
+    "https://telegra.ph/file/36213460b3aa6069d763f.jpg",
+    "https://telegra.ph/file/416d87dc64c6508736dca.jpg",
+    "https://telegra.ph/file/d6701b75d7228128926d1.jpg",
+    "https://telegra.ph/file/1d8ac0a1a98ec5ced9124.jpg",
+    "https://telegra.ph/file/36213460b3aa6069d763f.jpg",
+    "https://telegra.ph/file/416d87dc64c6508736dca.jpg",
+    "https://telegra.ph/file/416d87dc64c6508736dca.jpg",
+    "https://telegra.ph/file/d6701b75d7228128926d1.jpg",
+    "https://telegra.ph/file/1d8ac0a1a98ec5ced9124.jpg",
 ]
 
 
@@ -64,16 +64,16 @@ STICKER = [
 #---------------EMOJIOS---------------#
 
 EMOJIOS = [
-    "💣",
-    "💥",
-    "🪄",
-    "🧨",
+    "🥰",
+    "😘",
+    "🥵",
+    "🔥",
     "⚡",
-    "🤡",
-    "👻",
-    "🎃",
-    "🎩",
-    "🕊",
+    "😍",
+    "😚",
+    "☺️",
+    "🥶",
+    "🤭",
 ]
 
 
@@ -86,18 +86,20 @@ async def start(_, m: Message):
             text=random.choice(EMOJIOS),
         )
         await asyncio.sleep(1.3)
-        await accha.edit("__ᴅιиg ᴅσиg ꨄ︎ ѕтαятιиg..__")
+        await accha.edit("🥰")
         await asyncio.sleep(0.2)
-        await accha.edit("__ᴅιиg ᴅσиg ꨄ sтαятιиg.....__")
+        await accha.edit("😘")
         await asyncio.sleep(0.2)
-        await accha.edit("__ᴅιиg ᴅσиg ꨄ︎ sтαятιиg..__")
+        await accha.edit("🥵")
         await asyncio.sleep(0.2)
         await accha.delete()
         umm = await m.reply_sticker(sticker=random.choice(STICKER))
         await asyncio.sleep(2)
         await umm.delete()
         await m.reply_text(
-            text=f"""**๏ ʜᴇʏ..**\n\n**🥀ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ ʙᴀʙʏ...?**"""
+            text=f"""𝙷𝙴𝙻𝙻𝙾  𝙱𝙰𝙱𝚈 
+
+𝙸𝙰𝙼 𝚂𝙸𝚉𝚄𝙺𝙰 𝙼𝙸𝙽𝙰𝙼𝙾𝚃𝙾 𝙰𝙽 𝙰𝙸 𝙱𝙰𝚂𝙴𝙳 𝙲𝙷𝙰𝚃𝙱𝙾𝚃 𝙸 𝙲𝙰𝙽 𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙺𝙴𝙴𝙿 𝙰𝙲𝚃𝙸𝚅𝙴 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿"""
         )
         await add_served_user(m.from_user.id)
     else:
